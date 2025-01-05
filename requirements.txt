@@ -1,0 +1,8 @@
+flet
+fpdf 
+pdf2image
+pillow
+cython
+auto-py-to-exe
+pyjnius
+pandas
