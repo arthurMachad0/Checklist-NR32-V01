@@ -114,7 +114,7 @@ def converter_pdf_para_imagem(pdf_path):
     print(f"Convertendo PDF para imagem: {pdf_path}")
     images = convert_from_path(pdf_path)
     image_paths = []
-    # Salva todas as pÃ¡ginas do PDF como imagens PNG
+    # Salva todas as páginas do PDF como imagens PNG
     for i, image in enumerate(images):
         image_path = f"pagina_{i+1}.png"
         image.save(image_path, 'PNG')
@@ -139,7 +139,7 @@ def mostrar_pdf(page):
         # Cria uma coluna para conter as imagens
         col_images = ft.Column(controls=imagens, scroll="adaptive", expand=True)
 
-        # Ajusta o layout da pÃ¡gina
+        # Ajusta o layout da página
         page.add(
             ft.Column(
                 controls=[
@@ -254,10 +254,10 @@ def pagina_principal(page: ft.Page):
 def main(page: ft.Page):
     page.window_width = 1000
     page.window_height = 900
-    #page.bgcolor = ft.colors.BLACK
     page.theme_mode = ft.ThemeMode.DARK
     page.route = "/"
     
     pagina_principal(page)
+
 
 ft.app(target=main)
